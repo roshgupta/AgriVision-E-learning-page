@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+.footer{
+    display: flex;
+    background-color: #00113D;
+    color: white;
+    font-family: 'Quicksand';
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footerWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footerone{
+    .para{
+        margin-top: 15px;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+    }
+}
+.footertwo{
+    .para{
+        margin-top: 15px;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+    }
+}
+.footerthree{
+    .para{
+        margin-top: 15px;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+    }
+}
+.footerfour{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+.container-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.formInput{
+    margin-top: 20px;
+}
+.footerInput{
+    padding: 8px 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+}
+
+.subBtn{
+    padding: 12px 26px;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+}
+
+.subBtn:hover {
+  transition: all 0.3s ease-out;
+  background: #FAFF00;
+  color: #242424;
+  transition: 250ms;
+}
+
+.logo{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
