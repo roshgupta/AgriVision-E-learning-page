@@ -48,9 +48,29 @@ a {
 }
 
 .navbar__links {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__links a {
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.navbar__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a {
