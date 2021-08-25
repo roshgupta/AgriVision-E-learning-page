@@ -1,3 +1,25 @@
-h1 {
-  color: red;
+@import "utility";
+.navbar {
+  width: 100%;
+  height: rem(80);
+  background-color: var(--navbar-bg);
+  display: flex;
+  &__logo {
+    // height: 100%;
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      p {
+        display: inline-block;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+  }
+}
+
+a {
+  color: var(--text-light);
 }
