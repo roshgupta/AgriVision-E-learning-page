@@ -61,7 +61,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #00113D;
+  background-color: var(--footer-bg);
   color: white;
   font-family: 'Quicksand';
   -webkit-box-align: center;
