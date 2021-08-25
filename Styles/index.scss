@@ -1,0 +1,7 @@
+@import "variables"; //for storing variables like, colour etc
+@import "utility"; // for storing styles that can resued , to decrease redundency in code
+@import "mixins"; // mixins breakpoints for responsive design
+@import "globalStyles"; //global styles
+
+// now individual sections' styles can be imported here
+@import "navbar"; //styles for navbar
