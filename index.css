@@ -7,10 +7,12 @@
   --text-white: #ffffff;
   --footer-copyright-bg: #000a1e;
   --footer-bg: #00113d;
+  --black: black;
 }
 
 body {
   font-size: 100%;
+  font-family: "Inter", sans-serif;
 }
 
 * {
@@ -22,6 +24,12 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--text-light);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .navbar {
@@ -46,12 +54,21 @@ a {
           align-items: center;
 }
 
+.navbar__logo a img {
+  width: 60px;
+  height: 60px;
+}
+
 .navbar__logo a p {
   display: inline-block;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  color: var(--text-light);
 }
 
 .navbar__links {
-  width: 60%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,8 +79,33 @@ a {
 }
 
 .navbar__links a {
-  padding: 0.625rem;
+  padding: 0.125rem;
   text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.navbar__links a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  width: 0%;
+  height: 0.1875rem;
+  left: 0;
+  background-color: var(--theme-green);
+  border-radius: 0.125rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__links a:hover::after {
+  width: 100%;
+}
+
+.navbar__links .active-nav-link::after {
+  width: 100%;
 }
 
 .navbar__login {
@@ -76,8 +118,71 @@ a {
           align-items: center;
 }
 
-a {
-  color: var(--text-light);
+.navbar__login .login-btn {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--theme-green);
+  border-radius: 0.25rem;
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+.navbar__login .login-btn:hover {
+  -webkit-box-shadow: -3px -1px 18px 9px rgba(0, 0, 0, 0.336);
+          box-shadow: -3px -1px 18px 9px rgba(0, 0, 0, 0.336);
+}
+
+.learning-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.625rem;
+}
+
+.learning-tabs .learning-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.learning-tabs .learning-tab img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.learning-tabs .learning-tab p {
+  color: var(--text-black);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+.learning-tabs .learning-tab:hover {
+  border-radius: 0.375rem;
+  -webkit-box-shadow: -3px -1px 26px 9px rgba(0, 0, 0, 0.116);
+          box-shadow: -3px -1px 26px 9px rgba(0, 0, 0, 0.116);
+}
+
+.learning-tabs .active p {
+  font-weight: 600;
+}
+
+.header-image {
+  height: 20rem;
+  background-color: var(--theme-green);
+  margin-top: 0.625rem;
+}
+
+.popular-exams {
+  width: 100%;
 }
 
 .footer {
@@ -86,7 +191,7 @@ a {
   display: flex;
   background-color: var(--footer-bg);
   color: white;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -183,7 +288,7 @@ a {
 }
 
 .container-checkbox input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .container-checkbox .checkmark:after {
@@ -239,7 +344,7 @@ a {
 .subBtn:hover {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  background: #FAFF00;
+  background: #faff00;
   color: #242424;
   -webkit-transition: 250ms;
   transition: 250ms;

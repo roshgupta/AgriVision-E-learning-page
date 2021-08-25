@@ -4,5 +4,6 @@
 @import "globalStyles"; //global styles
 
 // now individual sections' styles can be imported here
-@import "navbar"; //styles for navbar
+@import "header"; //styles for header, includes navbar, tabs button, header-image
+@import "popular_exam";
 @import "footer"; //styles for footer
