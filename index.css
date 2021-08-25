@@ -1,3 +1,13 @@
+:root {
+  --navbar-bg: #00268a;
+  --theme-green: #0b9f85;
+  --text-black: #404040;
+  --text-light: #fbfffa;
+  --text-white: #ffffff;
+  --footer-copyright-bg: #000a1e;
+  --footer-bg: #00113d;
+}
+
 body {
   font-size: 100%;
 }
@@ -9,7 +19,40 @@ body {
           box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--navbar-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__logo a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo a p {
+  display: inline-block;
+}
+
+.navbar__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  color: var(--text-light);
 }
 /*# sourceMappingURL=index.css.map */
