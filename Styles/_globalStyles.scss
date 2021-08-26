@@ -15,3 +15,24 @@ a {
   max-width: rem(1000);
   margin: auto;
 }
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    font-size: rem(24);
+    font-weight: 600;
+    color: var(--text-black);
+  }
+  .header-buttons {
+    width: 100px;
+    height: inherit;
+    display: flex;
+  }
+  .btn {
+    width: rem(32);
+    height: rem(32);
+    border-radius: rem(6);
+    background-color: var(--btn-bg);
+    margin: 0 rem(8);
+  }
+}
