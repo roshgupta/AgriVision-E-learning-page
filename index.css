@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
 :root {
   --navbar-bg: #00268a;
   --theme-green: #0b9f85;
@@ -419,5 +420,79 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.number-section {
+  background-color: var(--theme-green);
+  height: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Quicksand';
+}
+
+.numberLeft {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  color: white;
+  padding-top: 50px;
+  padding-left: 30px;
+  margin-top: 50px;
+}
+
+.numberLeft h1 {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.numberLeft .headingWritingBtn {
+  margin-top: 20px;
+  border: none;
+  height: 40px;
+  width: 150px;
+  border-radius: 12px;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--theme-green);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.numberLeft .headingWritingBtn:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background: var(-navbar-bg);
+}
+
+.numberRight {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.numberRight p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.numberRight h1 {
+  font-size: 50px;
 }
 /*# sourceMappingURL=index.css.map */
