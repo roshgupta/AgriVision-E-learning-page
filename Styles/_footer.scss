@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
-
 .footer {
   display: flex;
   background-color: var(--footer-bg);
-  color: white;
-  font-family: "Quicksand";
+  color: var(--text-white);
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: rem(50);
 }
 
 .footerWrapper {
@@ -18,7 +15,7 @@
 
 .footerone {
   .para {
-    margin-top: 15px;
+    margin-top: rem(15);
   }
   a {
     text-decoration: none;
@@ -27,7 +24,7 @@
 }
 .footertwo {
   .para {
-    margin-top: 15px;
+    margin-top: rem(15);
   }
   a {
     text-decoration: none;
@@ -36,7 +33,7 @@
 }
 .footerthree {
   .para {
-    margin-top: 15px;
+    margin-top: rem(15);
   }
   a {
     text-decoration: none;
@@ -54,10 +51,10 @@
 .container-checkbox {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: rem(35);
+  margin-bottom: rem(12);
   cursor: pointer;
-  font-size: 16px;
+  font-size: rem(16);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -74,8 +71,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: rem(25);
+  width: rem(25);
   background-color: #eee;
 }
 
@@ -98,41 +95,41 @@
 }
 
 .container-checkbox .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
+  left: rem(9);
+  top: rem(5);
+  width: rem(5);
+  height: rem(10);
+  border: solid var(--text-white);
+  border-width: 0 rem(3) rem(3) 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .formInput {
-  margin-top: 20px;
+  margin-top: rem(20);
 }
 .footerInput {
-  padding: 8px 20px;
-  border-radius: 2px;
-  margin-right: 10px;
+  padding: rem(8) rem(20);
+  border-radius: rem(2);
+  margin-right: rem(10);
   outline: none;
   border: none;
-  font-size: 18px;
-  margin-bottom: 16px;
-  border: 1px solid #fff;
+  font-size: rem(18);
+  margin-bottom: rem(16);
+  border: rem(1) solid var(--text-white);
 }
 
 .subBtn {
-  padding: 12px 26px;
-  font-size: 16px;
-  border-radius: 2px;
+  padding: rem(12) rem(26);
+  font-size: rem(16);
+  border-radius: rem(2);
   outline: none;
   border: none;
   cursor: pointer;
   background-color: black;
-  color: white;
-  border: 1px solid #fff;
+  color: var(--text-white);
+  border: rem(1) solid var(--text-white);
   transition: all 0.3s ease-out;
 }
 
@@ -144,7 +141,7 @@
 }
 
 .logo {
-  margin-top: 10px;
+  margin-top: rem(10);
   display: flex;
   align-items: center;
   justify-content: space-between;

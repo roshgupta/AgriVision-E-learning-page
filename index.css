@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
 :root {
   --navbar-bg: #00268a;
   --theme-green: #0b9f85;
@@ -376,38 +374,36 @@ a {
 
 .number-section {
   background-color: var(--theme-green);
-  height: 350px;
+  height: 21.875rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Quicksand';
 }
 
 .numberLeft {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
-  color: white;
-  padding-top: 50px;
-  padding-left: 30px;
-  margin-top: 50px;
+  color: var(--text-white);
+  padding-top: 3.125rem;
+  padding-left: 1.875rem;
+  margin-top: 3.125rem;
 }
 
 .numberLeft h1 {
-  font-size: 35px;
-  margin-top: 10px;
+  font-size: 2.1875rem;
+  margin-top: 0.625rem;
 }
 
 .numberLeft .headingWritingBtn {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   border: none;
-  height: 40px;
-  width: 150px;
-  border-radius: 12px;
-  font-family: 'Quicksand';
+  height: 2.5rem;
+  width: 9.375rem;
+  border-radius: 0.75rem;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--theme-green);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -440,12 +436,12 @@ a {
 }
 
 .numberRight p {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .numberRight h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .footer {
@@ -453,15 +449,14 @@ a {
   display: -ms-flexbox;
   display: flex;
   background-color: var(--footer-bg);
-  color: white;
-  font-family: "Quicksand";
+  color: var(--text-white);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px;
+  padding: 3.125rem;
 }
 
 .footerWrapper {
@@ -475,7 +470,7 @@ a {
 }
 
 .footerone .para {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .footerone a {
@@ -484,7 +479,7 @@ a {
 }
 
 .footertwo .para {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .footertwo a {
@@ -493,7 +488,7 @@ a {
 }
 
 .footerthree .para {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .footerthree a {
@@ -521,10 +516,10 @@ a {
 .container-checkbox {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 2.1875rem;
+  margin-bottom: 0.75rem;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -541,8 +536,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 1.5625rem;
+  width: 1.5625rem;
   background-color: #eee;
 }
 
@@ -565,41 +560,41 @@ a {
 }
 
 .container-checkbox .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
+  left: 0.5625rem;
+  top: 0.3125rem;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border: solid var(--text-white);
+  border-width: 0 0.1875rem 0.1875rem 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .formInput {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .footerInput {
-  padding: 8px 20px;
-  border-radius: 2px;
-  margin-right: 10px;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.125rem;
+  margin-right: 0.625rem;
   outline: none;
   border: none;
-  font-size: 18px;
-  margin-bottom: 16px;
-  border: 1px solid #fff;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  border: 0.0625rem solid var(--text-white);
 }
 
 .subBtn {
-  padding: 12px 26px;
-  font-size: 16px;
-  border-radius: 2px;
+  padding: 0.75rem 1.625rem;
+  font-size: 1rem;
+  border-radius: 0.125rem;
   outline: none;
   border: none;
   cursor: pointer;
   background-color: black;
-  color: white;
-  border: 1px solid #fff;
+  color: var(--text-white);
+  border: 0.0625rem solid var(--text-white);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -614,7 +609,7 @@ a {
 }
 
 .logo {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
