@@ -5,6 +5,7 @@
 
 // now individual sections' styles can be imported here
 @import "header"; //styles for header, includes navbar, tabs button, header-image
-@import "popular_exam";
-@import "footer"; //styles for footer
+@import "popular_exam"; //styles for popular exam section
+@import "take_quiz"; //styles for take quiz section
 @import "number-section"; //styles for number section
+@import "footer"; //styles for footer
