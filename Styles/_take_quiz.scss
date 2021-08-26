@@ -1,0 +1,101 @@
+.take-quiz-section {
+  width: 100%;
+  height: rem(650);
+  position: relative;
+  .take-quiz-bg {
+    width: 95%;
+    height: rem(600);
+    background-color: var(--theme-green);
+    margin: auto;
+    position: relative;
+    .take-quiz-white-bg {
+      width: 75%;
+      height: rem(400);
+      background-color: var(--text-white);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .take-quiz {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .take-quiz-content {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      .take-quiz-image {
+        margin-top: rem(32);
+        img {
+          border: rem(8) solid var(--text-white);
+          width: rem(550);
+          height: rem(550);
+          object-fit: cover;
+        }
+      }
+      .take-quiz-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: rem(24);
+        padding: 0 rem(80);
+        .quiz-head {
+          h2 {
+            margin-top: rem(20);
+            font-size: rem(32);
+            font-weight: 600;
+            color: var(--text-black);
+            span {
+              font-weight: 800;
+              -webkit-text-stroke: rem(2) var(--theme-green);
+              color: var(--text-white);
+            }
+          }
+          h3 {
+            font-size: rem(24);
+            font-weight: 400;
+            margin-top: rem(10);
+            color: var(--text-black);
+          }
+          .take-quiz-btn {
+            display: inline-block;
+            color: var(--theme-green);
+            font-size: rem(20);
+            font-weight: 700;
+            padding: rem(16) rem(48);
+            border: rem(2) solid var(--theme-green);
+            border-radius: rem(8);
+            margin-top: rem(48);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              background-color: var(--theme-green);
+              color: var(--text-white);
+            }
+          }
+        }
+        .quiz-foot {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          margin-top: rem(60);
+          .quiz-overview {
+            p {
+              color: var(--text-white);
+            }
+            .quiz-overview-count {
+              font-size: rem(32);
+              font-weight: 700;
+            }
+            .quiz-overview-label {
+              font-size: rem(20);
+              font-weight: 500;
+              margin-top: rem(12);
+            }
+          }
+        }
+      }
+    }
+  }
+}
