@@ -1,4 +1,6 @@
-.satisfied{
+.satisfied-section {
+  width: 100%;
+  .satisfied {
     height: rem(648);
     background-color: var(--theme-green);
     color: var(--text-white);
@@ -11,108 +13,109 @@
     overflow-x: hidden;
     overflow-y: hidden;
 
-    .line{
-        position: absolute;
-        top: 50px;
-        left: -50px;    
-        width: 200px;
-        height: 5px;
+    .line {
+      position: absolute;
+      top: 50px;
+      left: -50px;
+      width: 200px;
+      height: 5px;
+      background-color: var(--text-white);
+      transform: rotate(-45deg);
+    }
+
+    .circle {
+      position: absolute;
+      top: rem(-53);
+      right: -70px;
+      border: 5px solid white;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0);
+      color: white;
+      width: 225px;
+      height: 225px;
+      line-height: 100px;
+    }
+
+    .circle-bottom {
+      position: absolute;
+      border: 5px solid white;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0);
+      color: white;
+      width: 225px;
+      height: 225px;
+      line-height: 100px;
+      left: -102px;
+      top: 522px;
+    }
+
+    .line-right {
+      position: absolute;
+      top: 580px;
+      right: -70px;
+      width: 200px;
+      height: 5px;
+      background-color: var(--text-white);
+      transform: rotate(-45deg);
+    }
+
+    .satisfied-heading {
+      font-size: rem(24);
+      font-weight: 700;
+      margin-top: rem(94);
+      margin-left: rem(91);
+    }
+
+    .satisfied-card-holder {
+      display: flex;
+      margin-left: rem(235);
+      // margin-right: rem(262);
+      justify-content: space-around;
+      margin-top: rem(55);
+
+      .satisfied-card {
+        width: rem(267);
+        height: rem(322);
         background-color: var(--text-white);
-        transform: rotate(-45deg);
-    }
+        margin-right: rem(71);
+        border-radius: rem(12);
 
-    .circle{
-        position: absolute;
-        top: rem(-53);
-        right: -70px;
-        border:5px solid white;
-        border-radius:50%;
-        background:rgba(0,0,0,0);
-        color:white;
-        width:225px;
-        height:225px;
-        line-height:100px;
-    }
+        .satisfied-logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: rem(13);
+          color: var(--text-black);
+          line-height: rem(21);
+          margin-top: rem(15);
+          margin-bottom: rem(38);
+          color: var(--theme-green);
 
-    .circle-bottom{
-        position: absolute;
-        border:5px solid white;
-        border-radius:50%;
-        background:rgba(0,0,0,0);
-        color:white;
-        width:225px;
-        height:225px;
-        line-height:100px;
-        left: -102px;
-        top: 522px;
-    }
-
-    .line-right{
-        position: absolute; 
-        top: 580px;
-        right: -70px;
-        width: 200px;
-        height: 5px;
-        background-color: var(--text-white);
-        transform: rotate(-45deg);
-    }
-
-    .satisfied-heading{
-        margin-top: rem(94);
-        margin-left: rem(91);
-    }
-
-    .satisfied-card-holder{
-        display: flex;
-        margin-left: rem(235);
-        // margin-right: rem(262);
-        justify-content: space-around;
-        margin-top: rem(55);
-
-        .satisfied-card{
-            width: rem(267);
-            height: rem(322);
-            background-color: var(--text-white);
-            margin-right: rem(71);
-            border-radius: rem(12);
-
-            .satisfied-logo{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: rem(13);
-                color: var(--text-black);
-                line-height: rem(21);
-                margin-top: rem(15);
-                margin-bottom: rem(38);
-                color: var(--theme-green);
-
-                p{
-                    margin-left: rem(15);
-                }
-            }
+          p {
+            margin-left: rem(15);
+          }
         }
-
+      }
     }
-    .satisfied-words{
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        color: var(--text-black);
-        margin-left: rem(28);
-        margin-right: rem(28);
-        margin-top: rem(26);
+    .satisfied-words {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      color: var(--text-black);
+      margin-left: rem(28);
+      margin-right: rem(28);
+      margin-top: rem(26);
     }
-
+  }
 }
 
 .checked {
-    color: #FFCC03;
+  color: #ffcc03;
 }
 
-.star-holder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: rem(15.11);
+.star-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: rem(15.11);
 }

@@ -461,6 +461,7 @@ a {
 
 .news-update-section {
   width: 100%;
+  margin-bottom: 5rem;
 }
 
 .news-update-section .news-container .news-cards {
@@ -780,7 +781,11 @@ a {
   z-index: 100;
 }
 
-.satisfied {
+.satisfied-section {
+  width: 100%;
+}
+
+.satisfied-section .satisfied {
   height: 40.5rem;
   background-color: var(--theme-green);
   color: var(--text-white);
@@ -799,7 +804,7 @@ a {
   overflow-y: hidden;
 }
 
-.satisfied .line {
+.satisfied-section .satisfied .line {
   position: absolute;
   top: 50px;
   left: -50px;
@@ -810,7 +815,7 @@ a {
           transform: rotate(-45deg);
 }
 
-.satisfied .circle {
+.satisfied-section .satisfied .circle {
   position: absolute;
   top: -3.3125rem;
   right: -70px;
@@ -823,7 +828,7 @@ a {
   line-height: 100px;
 }
 
-.satisfied .circle-bottom {
+.satisfied-section .satisfied .circle-bottom {
   position: absolute;
   border: 5px solid white;
   border-radius: 50%;
@@ -836,7 +841,7 @@ a {
   top: 522px;
 }
 
-.satisfied .line-right {
+.satisfied-section .satisfied .line-right {
   position: absolute;
   top: 580px;
   right: -70px;
@@ -847,12 +852,14 @@ a {
           transform: rotate(-45deg);
 }
 
-.satisfied .satisfied-heading {
+.satisfied-section .satisfied .satisfied-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-top: 5.875rem;
   margin-left: 5.6875rem;
 }
 
-.satisfied .satisfied-card-holder {
+.satisfied-section .satisfied .satisfied-card-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,7 +869,7 @@ a {
   margin-top: 3.4375rem;
 }
 
-.satisfied .satisfied-card-holder .satisfied-card {
+.satisfied-section .satisfied .satisfied-card-holder .satisfied-card {
   width: 16.6875rem;
   height: 20.125rem;
   background-color: var(--text-white);
@@ -870,7 +877,7 @@ a {
   border-radius: 0.75rem;
 }
 
-.satisfied .satisfied-card-holder .satisfied-card .satisfied-logo {
+.satisfied-section .satisfied .satisfied-card-holder .satisfied-card .satisfied-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,11 +895,11 @@ a {
   color: var(--theme-green);
 }
 
-.satisfied .satisfied-card-holder .satisfied-card .satisfied-logo p {
+.satisfied-section .satisfied .satisfied-card-holder .satisfied-card .satisfied-logo p {
   margin-left: 0.9375rem;
 }
 
-.satisfied .satisfied-words {
+.satisfied-section .satisfied .satisfied-words {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -903,7 +910,7 @@ a {
 }
 
 .checked {
-  color: #FFCC03;
+  color: #ffcc03;
 }
 
 .star-holder {
