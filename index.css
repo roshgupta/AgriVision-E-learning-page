@@ -28,7 +28,7 @@ a {
 }
 
 .container {
-  max-width: 62.5rem;
+  max-width: 68.75rem;
   margin: auto;
 }
 
@@ -270,7 +270,7 @@ a {
 }
 
 .popular-exams-section .popular-exams .cards-container .cards {
-  width: 28.125rem;
+  width: 31.25rem;
   height: 18.75rem;
   background-color: #c4c4c4;
   margin: 1.25rem 0.5625rem;
@@ -415,6 +415,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 2.5rem 0;
   overflow-x: scroll;
   padding-bottom: 1.25rem;
@@ -454,6 +457,62 @@ a {
 .exam-section .exams-container .exams .exam p {
   font-size: 1rem;
   font-weight: 700;
+}
+
+.news-update-section {
+  width: 100%;
+}
+
+.news-update-section .news-container .news-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-x: scroll;
+  margin-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.news-update-section .news-container .news-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.news-update-section .news-container .news-cards .card {
+  width: 18.75rem;
+}
+
+.news-update-section .news-container .news-cards .card img {
+  width: 18.75rem;
+  height: 15.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-update-section .news-container .news-cards .card .card-text h3 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.news-update-section .news-container .news-cards .card .card-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-right: 1.5rem;
+  height: 6.25rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-update-section .news-container .news-cards .card .card-text .read-more {
+  padding: 0.5rem 0;
+  color: var(--theme-green);
+  cursor: pointer;
 }
 
 .number-section {

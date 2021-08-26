@@ -1,13 +1,23 @@
 @import "variables"; //for storing variables like, colour etc
+
 @import "utility"; // for storing styles that can resued , to decrease redundency in code
+
 @import "mixins"; // mixins breakpoints for responsive design
+
 @import "globalStyles"; //global styles
 
 // now individual sections' styles can be imported here
+
 @import "header"; //styles for header, includes navbar, tabs button, header-image
+
 @import "popular_exam"; //styles for popular exam section
+
 @import "take_quiz"; //styles for take quiz section
+
 @import "exams_section"; //styles for exams section
 
+@import "news_updates"; //styles for news update section
+
 @import "number-section"; //styles for number section
+
 @import "footer"; //styles for footer
