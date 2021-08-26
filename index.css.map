@@ -10,6 +10,7 @@
         "Styles/_header.scss",
         "Styles/_popular_exam.scss",
         "Styles/_take_quiz.scss",
+        "Styles/_exams_section.scss",
         "Styles/_number-section.scss",
         "Styles/_footer.scss",
         "Styles/_services.scss",
