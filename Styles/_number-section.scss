@@ -1,16 +1,23 @@
 .number-section {
   background-color: var(--theme-green);
-  height: rem(350);
+  height: rem(332);
   width: 100%;
   display: flex;
+
+  .number-enclosure{
+    display: flex;
+    width: 100%;
+    margin-top: rem(72.814);
+    margin-bottom: rem(72.814);
+
+  }
 }
 
 .numberLeft {
   flex: 1.5;
   color: var(--text-white);
-  padding-top: rem(50);
+  padding-top: rem(20);
   padding-left: rem(30);
-  margin-top: rem(50);
   h1 {
     font-size: rem(35);
     margin-top: rem(10);
