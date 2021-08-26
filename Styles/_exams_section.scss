@@ -5,6 +5,7 @@
     .exams {
       width: 100%;
       display: flex;
+      justify-content: space-between;
       margin: rem(40) 0;
       overflow-x: scroll;
       padding-bottom: rem(20);
