@@ -63,6 +63,11 @@ a {
   margin: 0 0.5rem;
 }
 
+section {
+  max-width: 112.5rem;
+  margin: auto;
+}
+
 .navbar {
   width: 100%;
   height: 5rem;
@@ -158,8 +163,7 @@ a {
 }
 
 .navbar__login .login-btn:hover {
-  -webkit-box-shadow: -3px -1px 18px 9px rgba(0, 0, 0, 0.219);
-          box-shadow: -3px -1px 18px 9px rgba(0, 0, 0, 0.219);
+  opacity: 0.9;
 }
 
 .learning-tabs {
@@ -783,19 +787,8 @@ a {
 
 .satisfied-section {
   width: 100%;
-}
-
-.satisfied-section .satisfied {
-  height: 40.5rem;
-  background-color: var(--theme-green);
+  height: 40.625rem;
   color: var(--text-white);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
@@ -804,80 +797,134 @@ a {
   overflow-y: hidden;
 }
 
-.satisfied-section .satisfied .line {
+.satisfied-section .satisfied-bg {
+  background-color: var(--theme-green);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.satisfied-section .satisfied-bg .line {
   position: absolute;
-  top: 50px;
-  left: -50px;
-  width: 200px;
-  height: 5px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 8px;
   background-color: var(--text-white);
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  -webkit-transform: translate(-20%, -10%) rotate(135deg);
+          transform: translate(-20%, -10%) rotate(135deg);
 }
 
-.satisfied-section .satisfied .circle {
+.satisfied-section .satisfied-bg .circle {
   position: absolute;
-  top: -3.3125rem;
-  right: -70px;
-  border: 5px solid white;
+  top: 0;
+  right: 0;
+  border: 8px solid white;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0);
-  color: white;
   width: 225px;
   height: 225px;
-  line-height: 100px;
+  -webkit-transform: translate(40%, -40%);
+          transform: translate(40%, -40%);
 }
 
-.satisfied-section .satisfied .circle-bottom {
+.satisfied-section .satisfied-bg .circle-bottom {
   position: absolute;
-  border: 5px solid white;
+  bottom: 0;
+  left: 0;
+  border: 8px solid white;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0);
-  color: white;
   width: 225px;
   height: 225px;
-  line-height: 100px;
-  left: -102px;
-  top: 522px;
+  -webkit-transform: translate(-40%, 40%);
+          transform: translate(-40%, 40%);
 }
 
-.satisfied-section .satisfied .line-right {
+.satisfied-section .satisfied-bg .line-right {
   position: absolute;
-  top: 580px;
-  right: -70px;
-  width: 200px;
-  height: 5px;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 8px;
   background-color: var(--text-white);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translate(20%, 0%) rotate(135deg);
+          transform: translate(20%, 0%) rotate(135deg);
 }
 
-.satisfied-section .satisfied .satisfied-heading {
+.satisfied-section .satisfied-bg img {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  height: 120px;
+}
+
+.satisfied-section .satisfied-bg .satisfied-heading {
+  position: absolute;
+  top: 100px;
+  left: 100px;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 5.875rem;
-  margin-left: 5.6875rem;
 }
 
-.satisfied-section .satisfied .satisfied-card-holder {
+.satisfied-section .satisfied-card-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 14.6875rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.satisfied-section .satisfied-card-container .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+}
+
+.satisfied-section .satisfied-card-container .wrapper .satisfied-cards {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 3.4375rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.satisfied-section .satisfied .satisfied-card-holder .satisfied-card {
+.satisfied-section .satisfied-card-container .wrapper .satisfied-cards .satisfied-card {
   width: 16.6875rem;
-  height: 20.125rem;
   background-color: var(--text-white);
-  margin-right: 4.4375rem;
   border-radius: 0.75rem;
+  margin: auto 1.25rem;
 }
 
-.satisfied-section .satisfied .satisfied-card-holder .satisfied-card .satisfied-logo {
+.satisfied-section .satisfied-card-container .wrapper .satisfied-cards .satisfied-card .satisfied-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,11 +942,37 @@ a {
   color: var(--theme-green);
 }
 
-.satisfied-section .satisfied .satisfied-card-holder .satisfied-card .satisfied-logo p {
+.satisfied-section .satisfied-card-container .wrapper .satisfied-cards .satisfied-card .satisfied-logo p {
   margin-left: 0.9375rem;
 }
 
-.satisfied-section .satisfied .satisfied-words {
+.satisfied-section .satisfied-card-container .wrapper .card-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5rem;
+}
+
+.satisfied-section .satisfied-card-container .wrapper .card-indicator .dot {
+  display: inline-block;
+  height: 4px;
+  width: 6px;
+  border-radius: 2px;
+  background-color: var(--text-white);
+  margin: 0rem 0.625rem;
+}
+
+.satisfied-section .satisfied-card-container .wrapper .card-indicator .active {
+  width: 16px;
+}
+
+.satisfied-section .satisfied-words {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
