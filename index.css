@@ -847,7 +847,7 @@ section {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 300px;
+  width: 18.75rem;
   height: 8px;
   background-color: var(--text-white);
   -webkit-transform: translate(20%, 0%) rotate(135deg);

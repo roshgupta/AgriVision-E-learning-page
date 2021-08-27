@@ -49,7 +49,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 300px;
+      width: rem(300);
       height: 8px;
       background-color: var(--text-white);
       transform: translate(20%, 0%) rotate(135deg);
@@ -92,7 +92,6 @@
         align-items: center;
         .satisfied-card {
           width: rem(267);
-          // height: rem(322);
           background-color: var(--text-white);
           border-radius: rem(12);
           margin: auto rem(20);
