@@ -1,59 +1,62 @@
 .number-section {
   background-color: var(--theme-green);
-  height: rem(332);
-  width: 100%;
+  height: rem(350);
   display: flex;
-
-  .number-enclosure{
-    display: flex;
-    width: 100%;
-    margin-top: rem(72.814);
-    margin-bottom: rem(72.814);
-
-  }
-}
-
-.numberLeft {
-  flex: 1.5;
-  color: var(--text-white);
-  padding-top: rem(20);
-  padding-left: rem(30);
-  h1 {
-    font-size: rem(35);
-    margin-top: rem(10);
-  }
-
-  .headingWritingBtn {
-    margin-top: rem(20);
-    border: none;
-    height: rem(40);
-    width: rem(150);
-    border-radius: rem(12);
-    font-weight: 700;
-    font-size: rem(14);
-    color: var(--theme-green);
-    align-items: center;
-    justify-content: center;
-  }
-  .headingWritingBtn:hover {
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    background: var(-navbar-bg);
-  }
-}
-.numberRight {
-  flex: 3;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  color: white;
-
-  p {
-    font-size: rem(20);
-    margin-bottom: rem(20);
-  }
-
-  h1 {
-    font-size: rem(50);
+  width: 100%;
+  .number-enclosure {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    .left {
+      display: inline-block;
+      h1 {
+        font-size: rem(36);
+        font-weight: 600;
+        color: var(--text-white);
+        margin-top: rem(16);
+      }
+      .start-learning-btn {
+        display: inline-block;
+        color: var(--theme-green);
+        background-color: var(--text-white);
+        font-weight: 600;
+        font-size: rem(18);
+        border-radius: rem(8);
+        padding: rem(10) rem(28);
+        margin-top: rem(36);
+        border: rem(2) solid var(--text-white);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: var(--text-white);
+          background-color: var(--theme-green);
+        }
+      }
+    }
+    .right {
+      width: 70%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .right-text {
+        padding: rem(4) rem(12);
+        color: var(--text-white);
+        text-align: center;
+        p {
+          font-size: rem(22);
+          font-weight: 400;
+          margin-bottom: rem(20);
+        }
+        h3 {
+          font-size: rem(54);
+          font-weight: 600;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
   }
 }
