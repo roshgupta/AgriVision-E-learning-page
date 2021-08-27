@@ -34,9 +34,24 @@ a {
     border-radius: rem(6);
     background-color: var(--btn-bg);
     margin: 0 rem(8);
+    font-size: rem(24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    i {
+      color: var(--text-white);
+    }
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }
-section {
+section,
+.footer-section,
+.navbar,
+.copy-right {
   max-width: rem(1800);
   margin: auto;
 }

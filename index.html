@@ -15,25 +15,27 @@
 
 <body>
   <header>
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <a href="/">
-          <img src="./Images/logo.png" alt="AgriVision4U">
-          <p>
-            AgriVision4U
-          </p>
-        </a>
-      </div>
-      <div class="navbar__links">
-        <a href="#" class="active-nav-link">Learning</a>
-        <a href="#">Magazine</a>
-        <a href="#">Latest Updates</a>
-        <a href="#">Academics</a>
-        <a href="#">Career Opportunities</a>
-        <a href="#">Global Agriculture</a>
-      </div>
-      <div class="navbar__login">
-        <a class="login-btn" href="">Login</a>
+    <nav>
+      <div class="navbar">
+        <div class="navbar__logo">
+          <a href="/">
+            <img src="./Images/logo.png" alt="AgriVision4U">
+            <p>
+              AgriVision4U
+            </p>
+          </a>
+        </div>
+        <div class="navbar__links">
+          <a href="#" class="active-nav-link">Learning</a>
+          <a href="#">Magazine</a>
+          <a href="#">Latest Updates</a>
+          <a href="#">Academics</a>
+          <a href="#">Career Opportunities</a>
+          <a href="#">Global Agriculture</a>
+        </div>
+        <div class="navbar__login">
+          <a class="login-btn" href="">Login</a>
+        </div>
       </div>
     </nav>
     <div class="learning-tabs container">
@@ -148,8 +150,8 @@
           Upcoming exams
         </h2>
         <div class="header-buttons">
-          <div class="header-button-left btn"></div>
-          <div class="header-button-right btn"></div>
+          <div class="header-button-left btn"><i class="fa fa-chevron-left"></i></div>
+          <div class="header-button-right btn"><i class="fa fa-chevron-right"></i></div>
         </div>
       </div>
       <div class="exams">
@@ -191,8 +193,8 @@
           Popular exams
         </h2>
         <div class="header-buttons">
-          <div class="header-button-left btn"></div>
-          <div class="header-button-right btn"></div>
+          <div class="header-button-left btn"><i class="fa fa-chevron-left"></i></div>
+          <div class="header-button-right btn"><i class="fa fa-chevron-right"></i></div>
         </div>
       </div>
       <div class="exams">
@@ -229,6 +231,42 @@
       </div>
     </div>
   </section>
+  <section class="success-section">
+    <div class="satisfied-bg">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="circle-bottom"></div>
+      <div class="line-right"></div>
+      <img src="./Images/comma.svg" alt="comma">
+      <div class="satisfied-heading">
+        Success Stories
+      </div>
+    </div>
+    <div class="success-container">
+      <div class="success-content">
+        <div class="success-header">
+          <h3>Success Stories</h3>
+          <div class="header-buttons">
+            <div class="header-button-left btn inactive"><i class="fa fa-arrow-left"></i></div>
+            <div class="header-button-right btn"><i class="fa fa-arrow-right"></i></div>
+          </div>
+        </div>
+        <div class="success-stories">
+          <div class="success-story">
+            <div class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, esse. Repudiandae
+              eveniet dicta unde aspernatur, provident iusto quibusdam. Eaque eligendi labore vitae praesentium.</div>
+            <div class="success-detail">
+              <div class="detail-text">
+                <p>Sanngesh, IIT Guwahati</p>
+                <p>UPSC Rank 200</p>
+              </div>
+              <img src="./Images/Group 400.png" alt="Avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="news-update-section">
     <div class="news-container container">
       <div class="slider-header">
@@ -236,8 +274,8 @@
           News and Updates
         </h2>
         <div class="header-buttons">
-          <div class="header-button-left btn"></div>
-          <div class="header-button-right btn"></div>
+          <div class="header-button-left btn"><i class="fa fa-chevron-left"></i></div>
+          <div class="header-button-right btn"><i class="fa fa-chevron-right"></i></div>
         </div>
       </div>
       <div class="news-cards">
@@ -327,7 +365,7 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
             </div>
             <div class="satisfied-words">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, vel. Sunt eveniet placeat ullam eum
@@ -372,8 +410,17 @@
       </div>
     </div>
   </section>
-  <section class="Service-provided">
-
+  <section class="service-provided-section">
+    <div class="service-provided">
+      <div class="heading-image">
+        <h2>Services We Provide</h2>
+        <img src="./Images/service-provided.svg" alt="services">
+      </div>
+    </div>
+    <img src="./Images/video-lectures.svg" id="services-video-lectures" alt="Video Lectures">
+    <img src="./Images/latest-updates.svg" id="services-latest-updates" alt="Latest Updates">
+    <img src="./Images/magazines.svg" id="services-magazines" alt="Magazines">
+    <img src="./Images/test-series.svg" id="services-test-series" alt="Test Series">
   </section>
   <section class="number-section">
     <div class="number-enclosure">
@@ -402,47 +449,60 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footerWrapper">
-      <div class="footerone">
-        <h3>Contact Us</h3>
-        <p class="para">Hajauli, Ballia, Varanasi,</p>
-        <p>Uttarpradesh, 221701</p>
-        <p class="para">Contact no: 7510545225</p>
-        <p class="para">Email: editor-in-chief@agrivision4u.com</p>
-      </div>
-      <div class="footertwo">
-        <h3>Brand and Security</h3>
-        <a class="para" href="#">Report Copyright Infringement</a>
-        <a class="para" href="#">Report Security Issue</a>
-        <a class="para" href="#">Trademark Notice</a>
-        <a class="para" href="#">Advertise with us</a>
-        <a class="para" href="#">Help and Support</a>
-      </div>
-      <div class="footerthree">
-        <h3>Company</h3>
-        <a class="para" href="#">About us</a>
-        <a class="para" href="#">Why choose us</a>
-        <a class="para" href="#">Our Partners</a>
-        <a class="para" href="#">Privacy Policy</a>
-        <a class="para" href="#">Terms & Conditions</a>
+  <footer>
+    <div class="footer-section">
+      <div class="footer-wrapper">
+        <div class="footer">
+          <div class="foot">
+            <h3>Contact Us</h3>
+            <p class="foot-text">Hajauli, Ballia, Varanasi, <br> Uttarpradesh, 221701</p>
+            <p class="foot-text">Contact no: <span>7510545225</span></p>
+            <p class="foot-text">Email: <br> editor-in-chief@agrivision4u.com</p>
+            <div class="social-media">
+              <a href="#"><img src="./Images/icons/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="./Images/icons/instagram.svg" alt="instagram"></a>
+              <a href="#"><img src="./Images/icons/youtube.svg" alt="youtube"></a>
+              <a href="#"><img src="./Images/icons/twitter.svg" alt="twitter"></a>
+              <a href="#"><img src="./Images/icons/mail.svg" alt="mail"></a>
+            </div>
+          </div>
+          <div class="foot">
+            <h3>Brand and Security</h3>
+            <a class="foot-text" href="#">Report Copyright Infringement</a>
+            <a class="foot-text" href="#">Report Security Issue</a>
+            <a class="foot-text" href="#">Trademark Notice</a>
+            <a class="foot-text" href="#">Advertise with us</a>
+            <a class="foot-text" href="#">Help and Support</a>
+          </div>
+          <div class="foot">
+            <h3>Company</h3>
+            <a class="foot-text" href="#">About us</a>
+            <a class="foot-text" href="#">Why choose us</a>
+            <a class="foot-text" href="#">Our Partners</a>
+            <a class="foot-text" href="#">Privacy Policy</a>
+            <a class="foot-text" href="#">Terms & Conditions</a>
+          </div>
+          <div class="foot foot-side">
+            <input type="checkbox" id="news-letter-checkbox" checked="checked">
+            <label for="news-letter-checkbox">Stay Up to date with our newsletter</label>
+            <div class="email-wrapper">
+              <h4>Sign up for our newsletter</h4>
+              <div class="email-input">
+                <input type="email" name="email" placeholder="Your Email" class="input-email-id" />
+                <button type="submit" class="yes-please-button">YES, PLEASE</button>
+              </div>
+            </div>
+            <div class="footer-logo">
+              <img src="./Images/icons/agrivision4u.svg" alt="AgriVision4U">
+              <img src="./Images/icons/msme.svg" alt="MSME">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footerfour">
-      <label class="container-checkbox">Stay Up to date with our newsletter
-        <input type="checkbox" checked="checked">
-        <span class="checkmark"></span>
-      </label>
-      <h4>Sign up for our newsletter</h4>
-      <div class="formInput">
-        <form>
-          <input type="email" name="email" placeholder="Email" class="footerInput" />
-          <button type="submit" class="subBtn">YES, PLEASE</button>
-        </form>
-        <div class="logo">
-          <div>Logo 1</div>
-          <div>Logo 2</div>
-        </div>
+    <div class="copy-right-container">
+      <div class="copy-right">
+        Copyrights &copy; AgriVision4U 2021
       </div>
     </div>
   </footer>
