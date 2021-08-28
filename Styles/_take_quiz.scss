@@ -9,6 +9,15 @@
     background-color: var(--theme-green);
     margin: auto;
     position: relative;
+    @include breakpoint(medium) {
+      height: rem(500);
+    }
+    @include breakpoint(tablet) {
+      height: rem(350);
+    }
+    @include breakpoint(small) {
+      height: rem(250);
+    }
     .take-quiz-white-bg {
       width: 75%;
       height: rem(400);
@@ -16,6 +25,16 @@
       position: absolute;
       top: 0;
       right: 0;
+      @include breakpoint(medium) {
+        height: rem(300);
+      }
+      @include breakpoint(tablet) {
+        height: rem(220);
+      }
+      @include breakpoint(small) {
+        height: rem(150);
+        width: 80%;
+      }
     }
   }
   .take-quiz {
@@ -26,13 +45,28 @@
       width: 90%;
       margin: auto;
       display: flex;
+      @include breakpoint(small) {
+        justify-content: center;
+        align-items: center;
+      }
       .take-quiz-image {
         margin-top: rem(32);
         img {
           border: rem(8) solid var(--text-white);
-          width: rem(550);
-          height: rem(550);
+          width: rem(500);
+          height: rem(500);
           object-fit: cover;
+          @include breakpoint(medium) {
+            width: rem(400);
+            height: rem(400);
+          }
+          @include breakpoint(tablet) {
+            width: rem(280);
+            height: rem(280);
+          }
+          @include breakpoint(small) {
+            display: none;
+          }
         }
       }
       .take-quiz-text {
@@ -40,8 +74,17 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-left: rem(24);
-        padding: 0 rem(80);
+        padding-left: rem(80);
+        @include breakpoint(medium) {
+          padding-left: rem(50);
+        }
+        @include breakpoint(tablet) {
+          padding-left: rem(20);
+        }
+        @include breakpoint(small) {
+          text-align: center;
+          padding-left: rem(16);
+        }
         .quiz-head {
           h2 {
             margin-top: rem(20);
@@ -53,12 +96,24 @@
               -webkit-text-stroke: rem(2) var(--theme-green);
               color: var(--text-white);
             }
+            @include breakpoint(medium) {
+              font-size: rem(28);
+            }
+            @include breakpoint(tablet) {
+              font-size: rem(22);
+            }
           }
           h3 {
             font-size: rem(24);
             font-weight: 400;
             margin-top: rem(10);
             color: var(--text-black);
+            @include breakpoint(medium) {
+              font-size: rem(22);
+            }
+            @include breakpoint(tablet) {
+              font-size: rem(18);
+            }
           }
           .take-quiz-btn {
             display: inline-block;
@@ -70,6 +125,18 @@
             border-radius: rem(8);
             margin-top: rem(48);
             transition: all 0.3s ease-in-out;
+            @include breakpoint(medium) {
+              padding: rem(12) rem(32);
+              margin-top: rem(32);
+            }
+            @include breakpoint(tablet) {
+              font-size: rem(16);
+              padding: rem(8) rem(24);
+              margin-top: rem(24);
+            }
+            @include breakpoint(small) {
+              margin-top: rem(12);
+            }
             &:hover {
               background-color: var(--theme-green);
               color: var(--text-white);
@@ -81,6 +148,9 @@
           width: 100%;
           justify-content: space-between;
           margin-top: rem(60);
+          @include breakpoint(small) {
+            margin-top: rem(30);
+          }
           .quiz-overview {
             p {
               color: var(--text-white);
@@ -88,11 +158,26 @@
             .quiz-overview-count {
               font-size: rem(32);
               font-weight: 700;
+              @include breakpoint(medium) {
+                font-size: rem(28);
+              }
+              @include breakpoint(tablet) {
+                font-size: rem(22);
+              }
             }
             .quiz-overview-label {
               font-size: rem(20);
               font-weight: 500;
               margin-top: rem(12);
+              @include breakpoint(medium) {
+                font-size: rem(18);
+              }
+              @include breakpoint(tablet) {
+                font-size: rem(16);
+              }
+              @include breakpoint(small) {
+                margin-top: rem(8);
+              }
             }
           }
         }

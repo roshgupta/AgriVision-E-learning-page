@@ -18,6 +18,9 @@ a {
 .slider-header {
   display: flex;
   justify-content: space-between;
+  margin-left: rem(16);
+  margin-right: rem(16);
+  padding-left: rem(8);
   h2 {
     font-size: rem(24);
     font-weight: 600;

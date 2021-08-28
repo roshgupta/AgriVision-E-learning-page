@@ -3,18 +3,79 @@ nav {
   .navbar {
     width: 100%;
     height: rem(80);
-
     display: flex;
     justify-content: space-evenly;
+    @include breakpoint(tablet) {
+      justify-content: space-between;
+      height: rem(60);
+      position: relative;
+    }
+
+    &__hamburger {
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin-left: rem(32);
+      @include breakpoint(tablet) {
+        display: flex;
+      }
+      @include breakpoint(small) {
+        margin-left: rem(16);
+      }
+      .hamburger-container {
+        width: rem(35);
+        height: rem(35);
+        border-radius: rem(6);
+        border: rem(2) solid var(--text-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 rem(2);
+        cursor: pointer;
+        margin: rem(0) rem(5);
+        .ham {
+          display: inline-block;
+          width: rem(25);
+          height: rem(3);
+          background-color: var(--text-white);
+          margin: rem(2) rem(0);
+          border-radius: rem(2);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .hamburger-open {
+        .ham {
+          &:nth-child(1) {
+            transform-origin: left;
+            transform: translate(15%, -40%) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform-origin: left;
+            transform: translate(13%, 90%) rotate(-45deg);
+          }
+        }
+      }
+    }
 
     &__logo {
       a {
         height: 100%;
         display: flex;
         align-items: center;
+        margin-left: rem(8);
         img {
           width: rem(60);
           height: rem(60);
+          object-fit: cover;
+          @include breakpoint(tablet) {
+            width: rem(40);
+            height: rem(40);
+          }
         }
         p {
           display: inline-block;
@@ -25,11 +86,13 @@ nav {
         }
       }
     }
-    &__links {
-      width: 65%;
+    .desktop-links {
       display: flex;
       height: 100%;
       align-items: center;
+      @include breakpoint(tablet) {
+        display: none;
+      }
       a {
         padding: rem(2);
         text-align: center;
@@ -37,6 +100,10 @@ nav {
         font-weight: 500;
         margin: 0 rem(16);
         position: relative;
+        @include breakpoint(medium) {
+          padding: rem(2) rem(1);
+          margin: 0 rem(8);
+        }
 
         &::after {
           content: "";
@@ -59,16 +126,54 @@ nav {
         }
       }
     }
+    @include breakpoint(tablet) {
+      .ham-links {
+        position: absolute;
+        top: rem(60);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--navbar-bg);
+        border-top: rem(2) solid var(--text-white);
+        padding: rem(32);
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+          padding: rem(16) rem(32);
+          border-bottom: rem(1) solid var(--text-white);
+          text-align: center;
+        }
+        .active-nav-link {
+          border-bottom: rem(4) solid var(--theme-green);
+        }
+      }
+    }
+    &__links {
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
     &__login {
       display: flex;
       height: 100%;
       align-items: center;
+      @include breakpoint(tablet) {
+        margin-right: rem(32);
+      }
+      @include breakpoint(small) {
+        margin-right: rem(16);
+      }
       .login-btn {
         padding: rem(8) rem(24);
         background-color: var(--theme-green);
         border-radius: rem(4);
         color: var(--text-white);
         font-weight: 700;
+        margin-right: rem(8);
+        @include breakpoint(medium) {
+          padding: rem(8) rem(16);
+        }
         &:hover {
           opacity: 0.9;
         }
@@ -82,11 +187,16 @@ nav {
   justify-content: space-between;
   margin-top: rem(20);
   margin-bottom: rem(20);
+  padding: rem(0) rem(24);
   .learning-tab {
     display: flex;
     align-items: center;
     padding: rem(16) rem(8);
+    margin: rem(4);
     transition: all 0.3s ease-in-out;
+    @include breakpoint(medium) {
+      padding: rem(8) rem(4);
+    }
     img {
       width: rem(24);
       height: rem(24);
@@ -96,6 +206,15 @@ nav {
       font-weight: 400;
       font-size: rem(20);
       margin-left: rem(8);
+      @include breakpoint(medium) {
+        font-size: rem(18);
+      }
+      @include breakpoint(tablet) {
+        font-size: rem(16);
+      }
+      @include breakpoint(small) {
+        font-size: rem(14);
+      }
     }
     &:hover {
       border-radius: rem(6);
@@ -109,7 +228,17 @@ nav {
   }
 }
 .header-image {
-  height: rem(320);
+  min-height: rem(320);
+  //this can be commented if, there is an image in this div and height of the image is set
   background-color: var(--theme-green);
   margin-top: rem(10);
+  @include breakpoint(medium) {
+    margin-left: rem(16);
+    margin-right: rem(16);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }

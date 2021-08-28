@@ -3,16 +3,20 @@
   margin-top: rem(32);
   .exams-container {
     .exams {
-      width: 100%;
+      width: 95%;
       display: flex;
       justify-content: space-between;
       margin: rem(40) 0;
+      padding: rem(0) rem(20);
       overflow-x: scroll;
       padding-bottom: rem(20);
       -ms-overflow-style: none;
       scrollbar-width: none;
       &::-webkit-scrollbar {
         display: none;
+      }
+      @include breakpoint(medium) {
+        padding: rem(0) rem(32);
       }
       .exam {
         min-width: rem(120);
@@ -24,6 +28,9 @@
         align-items: center;
         box-shadow: 0px 4px 20px rgba(11, 159, 133, 0.15);
         margin: 0 rem(40);
+        @include breakpoint(medium) {
+          margin: 0 rem(16);
+        }
 
         img {
           width: rem(50);

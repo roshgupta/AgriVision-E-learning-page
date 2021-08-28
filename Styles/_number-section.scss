@@ -1,6 +1,6 @@
 .number-section {
   background-color: var(--theme-green);
-  height: rem(350);
+  min-height: rem(350);
   display: flex;
   align-items: center;
   width: 100%;
@@ -9,8 +9,14 @@
     justify-content: space-between;
     width: 95%;
     margin: auto;
+    @include breakpoint(medium) {
+      flex-direction: column;
+    }
     .left {
       display: inline-block;
+      @include breakpoint(medium) {
+        text-align: center;
+      }
       h1 {
         font-size: rem(36);
         font-weight: 600;
@@ -29,6 +35,9 @@
         border: rem(2) solid var(--text-white);
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        @include breakpoint(medium) {
+          margin: rem(20);
+        }
         &:hover {
           color: var(--text-white);
           background-color: var(--theme-green);
@@ -40,18 +49,39 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+      @include breakpoint(small) {
+        flex-direction: column;
+      }
       .right-text {
         padding: rem(4) rem(12);
         color: var(--text-white);
         text-align: center;
+        @include breakpoint(small) {
+          margin-bottom: rem(24);
+        }
         p {
           font-size: rem(22);
           font-weight: 400;
           margin-bottom: rem(20);
+          @include breakpoint(medium) {
+            font-size: rem(18);
+          }
+          @include breakpoint(small) {
+            font-size: rem(22);
+          }
         }
         h3 {
           font-size: rem(54);
           font-weight: 600;
+          @include breakpoint(medium) {
+            font-size: rem(40);
+          }
+          @include breakpoint(small) {
+            font-size: rem(54);
+          }
           span {
             font-weight: 400;
           }

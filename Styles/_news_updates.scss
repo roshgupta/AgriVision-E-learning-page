@@ -2,8 +2,9 @@
   width: 100%;
   margin-bottom: rem(80);
   .news-container {
+    padding: rem(0) rem(16);
+    width: 100%;
     .news-cards {
-      width: 100%;
       display: flex;
       justify-content: space-between;
       overflow-x: scroll;
@@ -14,18 +15,54 @@
       &::-webkit-scrollbar {
         display: none;
       }
+      @include breakpoint(medium) {
+        justify-content: center;
+      }
       .card {
+        margin: auto rem(12);
         width: rem(300);
+        @include breakpoint(medium) {
+          width: rem(240);
+        }
+        @include breakpoint(tablet) {
+          width: rem(180);
+        }
+        @include breakpoint(small) {
+          width: rem(264);
+          margin: 0 rem(80);
+        }
+
         img {
           width: rem(300);
           height: rem(250);
           object-fit: cover;
+          @include breakpoint(medium) {
+            width: rem(240);
+            height: rem(200);
+          }
+          @include breakpoint(tablet) {
+            width: rem(180);
+            height: rem(150);
+          }
+          @include breakpoint(small) {
+            width: rem(264);
+            height: rem(220);
+          }
         }
         .card-text {
           h3 {
             margin: rem(16) 0;
             font-size: rem(20);
             font-weight: 700;
+            @include breakpoint(medium) {
+              font-size: rem(18);
+            }
+            @include breakpoint(tablet) {
+              font-size: rem(16);
+            }
+            @include breakpoint(small) {
+              font-size: rem(18);
+            }
           }
           p {
             font-size: rem(16);
@@ -35,6 +72,23 @@
             line-height: rem(24);
             overflow: hidden;
             text-overflow: ellipsis;
+            @include breakpoint(medium) {
+              font-size: rem(14);
+              line-height: rem(20);
+              padding-right: rem(20);
+            }
+            @include breakpoint(tablet) {
+              font-size: rem(12);
+              line-height: rem(16);
+              height: rem(116);
+              padding-right: rem(18);
+            }
+            @include breakpoint(small) {
+              font-size: rem(14);
+              line-height: rem(20);
+              height: rem(100);
+              padding-right: rem(20);
+            }
           }
           .read-more {
             padding: rem(8) 0;
