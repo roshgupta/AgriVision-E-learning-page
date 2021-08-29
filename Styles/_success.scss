@@ -69,6 +69,7 @@
         overflow-x: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        display: flex;
         &::-webkit-scrollbar {
           display: none;
         }

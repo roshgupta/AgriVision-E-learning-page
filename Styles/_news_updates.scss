@@ -50,6 +50,16 @@
           }
         }
         .card-text {
+          width: rem(300);
+          @include breakpoint(medium) {
+            width: rem(240);
+          }
+          @include breakpoint(tablet) {
+            width: rem(180);
+          }
+          @include breakpoint(small) {
+            width: rem(264);
+          }
           h3 {
             margin: rem(16) 0;
             font-size: rem(20);

@@ -1,6 +1,10 @@
 body {
   font-size: 100%;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 * {
   margin: 0;

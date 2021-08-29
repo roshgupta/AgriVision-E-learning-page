@@ -138,6 +138,7 @@ nav {
         padding: rem(32);
         justify-content: space-around;
         align-items: center;
+        animation: hamburger-open 300ms ease-in-out forwards;
 
         a {
           padding: rem(16) rem(32);
