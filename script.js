@@ -80,37 +80,3 @@ for (let i = 0; i < sliderContainers.length; i++) {
     ],
   });
 }
-//slider for satisfied user section
-// $(".satisfied-cards-slider").slick({
-//   autoplay: true,
-//   dots: false,
-//   arrow: false,
-//   infinite: true,
-//   speed: 1000,
-//   autoplaySpeed: 4000,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       },
-//     },
-//     {
-//       breakpoint: 832,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       },
-//     },
-//     {
-//       breakpoint: 640,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       },
-//     },
-//   ],
-// });
