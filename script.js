@@ -37,15 +37,16 @@ let sliderRightButton = [
   ".success-header-button-right",
   ".news-header-button-right",
 ];
-let slidestoShow1 = [5, 5, 1, 3, 3];
-let slidestoShowB1 = [4, 4, 1, 3, 3];
-let slidestoShowB2 = [3, 3, 1, 3, 2];
-let slidestoShowB3 = [2, 2, 1, 1, 1];
-let sliderSpeed = [400, 400, 1000, 1000];
+let slidestoShow1 = [5, 5, 1, 3];
+let slidestoShowB1 = [4, 4, 1, 3];
+let slidestoShowB2 = [3, 3, 1, 3];
+let slidestoShowB3 = [2, 2, 1, 1];
+let autoSlide = [true, true, false, false];
+let sliderSpeed = [800, 800, 1000, 1000];
 let autoPlayInterval = [3000, 3000, 4000, 4000];
 for (let i = 0; i < sliderContainers.length; i++) {
   $(sliderContainers[i]).slick({
-    autoplay: true,
+    autoplay: autoSlide[i],
     dots: false,
     prevArrow: $(sliderLeftButton[i]),
     nextArrow: $(sliderRightButton[i]),

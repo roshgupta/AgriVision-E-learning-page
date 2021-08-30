@@ -18,6 +18,7 @@ a {
 .container {
   max-width: rem(1100);
   margin: auto;
+  overflow-x: hidden;
 }
 .slider-header {
   display: flex;
@@ -61,4 +62,5 @@ section,
 .copy-right {
   max-width: rem(1800);
   margin: auto;
+  overflow-x: hidden;
 }

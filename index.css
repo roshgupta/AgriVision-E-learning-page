@@ -58,6 +58,7 @@ a {
 .container {
   max-width: 68.75rem;
   margin: auto;
+  overflow-x: hidden;
 }
 
 .slider-header {
@@ -121,6 +122,7 @@ section,
 .copy-right {
   max-width: 112.5rem;
   margin: auto;
+  overflow-x: hidden;
 }
 
 nav {
