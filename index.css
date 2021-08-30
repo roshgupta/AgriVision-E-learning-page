@@ -1923,32 +1923,6 @@ nav .navbar__login .login-btn:hover {
   font-weight: 600;
 }
 
-.satisfied-section .satisfied-card-container .wrapper .card-indicator {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2.5rem;
-}
-
-.satisfied-section .satisfied-card-container .wrapper .card-indicator .dot {
-  display: inline-block;
-  height: 0.25rem;
-  width: 0.375rem;
-  border-radius: 0.125rem;
-  background-color: var(--text-white);
-  margin: 0rem 0.625rem;
-}
-
-.satisfied-section .satisfied-card-container .wrapper .card-indicator .active {
-  width: 1rem;
-}
-
 .satisfied-bg {
   background-color: var(--theme-green);
   height: 100%;

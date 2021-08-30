@@ -39,7 +39,7 @@ let sliderRightButton = [
 ];
 let slidestoShow1 = [5, 5, 1, 3, 3];
 let slidestoShowB1 = [4, 4, 1, 3, 3];
-let slidestoShowB2 = [3, 3, 1, 3, 3];
+let slidestoShowB2 = [3, 3, 1, 3, 2];
 let slidestoShowB3 = [2, 2, 1, 1, 1];
 let sliderSpeed = [400, 400, 1000, 1000];
 let autoPlayInterval = [3000, 3000, 4000, 4000];
