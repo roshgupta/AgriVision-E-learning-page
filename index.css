@@ -345,6 +345,10 @@ nav .navbar .desktop-links .active-nav-link::after {
   }
 }
 
+nav .navbar__links {
+  min-width: 60%;
+}
+
 @media (max-width: 52em) {
   nav .navbar__links {
     display: none;
@@ -1121,9 +1125,9 @@ nav .navbar__login .login-btn:hover {
   padding-right: 3rem;
   max-width: 34.375rem;
   max-height: 10rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 1.5rem;
   color: white;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1131,13 +1135,13 @@ nav .navbar__login .login-btn:hover {
 
 @media (max-width: 52em) {
   .success-section .success-container .success-content .success-stories .success-story .story {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 40em) {
   .success-section .success-container .success-content .success-stories .success-story .story {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
 
