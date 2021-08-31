@@ -140,7 +140,7 @@ nav .navbar {
           justify-content: space-evenly;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   nav .navbar {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -162,7 +162,7 @@ nav .navbar__hamburger {
   margin-left: 2rem;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   nav .navbar__hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -170,7 +170,7 @@ nav .navbar__hamburger {
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   nav .navbar__hamburger {
     margin-left: 1rem;
   }
@@ -246,7 +246,7 @@ nav .navbar__logo a img {
      object-fit: cover;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   nav .navbar__logo a img {
     width: 2.5rem;
     height: 2.5rem;
@@ -271,7 +271,7 @@ nav .navbar .desktop-links {
           align-items: center;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   nav .navbar .desktop-links {
     display: none;
   }
@@ -286,7 +286,7 @@ nav .navbar .desktop-links a {
   position: relative;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   nav .navbar .desktop-links a {
     padding: 0.125rem 0.0625rem;
     margin: 0 0.5rem;
@@ -314,7 +314,7 @@ nav .navbar .desktop-links .active-nav-link::after {
   width: 100%;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   nav .navbar .ham-links {
     position: absolute;
     top: 3.75rem;
@@ -351,7 +351,7 @@ nav .navbar__links {
   min-width: 60%;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   nav .navbar__links {
     display: none;
   }
@@ -367,13 +367,13 @@ nav .navbar__login {
           align-items: center;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   nav .navbar__login {
     margin-right: 2rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   nav .navbar__login {
     margin-right: 1rem;
   }
@@ -388,7 +388,7 @@ nav .navbar__login .login-btn {
   margin-right: 0.5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   nav .navbar__login .login-btn {
     padding: 0.5rem 1rem;
   }
@@ -425,7 +425,7 @@ nav .navbar__login .login-btn:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .learning-tabs .learning-tab {
     padding: 0.5rem 0.25rem;
   }
@@ -443,19 +443,19 @@ nav .navbar__login .login-btn:hover {
   margin-left: 0.5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .learning-tabs .learning-tab p {
     font-size: 1.125rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .learning-tabs .learning-tab p {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .learning-tabs .learning-tab p {
     font-size: 0.875rem;
   }
@@ -477,7 +477,7 @@ nav .navbar__login .login-btn:hover {
   margin-top: 0.625rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .header-image {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -500,13 +500,13 @@ nav .navbar__login .login-btn:hover {
   margin-top: 5rem;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .popular-exams-section .popular-exams {
     margin-top: 3.75rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .popular-exams-section .popular-exams {
     margin-top: 2.5rem;
   }
@@ -517,7 +517,7 @@ nav .navbar__login .login-btn:hover {
   font-size: 1.5rem;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .popular-exams-section .popular-exams h2 {
     font-size: 1.25rem;
   }
@@ -535,13 +535,13 @@ nav .navbar__login .login-btn:hover {
       flex-wrap: wrap;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .popular-exams-section .popular-exams .exam-buttons {
     margin: 1.5rem 0;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .popular-exams-section .popular-exams .exam-buttons {
     margin: 1.25rem 0;
   }
@@ -559,14 +559,14 @@ nav .navbar__login .login-btn:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .popular-exams-section .popular-exams .exam-buttons .exam-button {
     padding: 0.75rem 1.875rem;
     font-size: 1.125rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .popular-exams-section .popular-exams .exam-buttons .exam-button {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
@@ -590,13 +590,13 @@ nav .navbar__login .login-btn:hover {
           justify-content: center;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .popular-exams-section .popular-exams .cards-container {
     margin-top: 3rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .popular-exams-section .popular-exams .cards-container {
     margin: 2rem 0;
   }
@@ -624,19 +624,19 @@ nav .navbar__login .login-btn:hover {
   position: relative;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz-bg {
     height: 31.25rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz-bg {
     height: 21.875rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz-bg {
     height: 15.625rem;
   }
@@ -651,19 +651,19 @@ nav .navbar__login .login-btn:hover {
   right: 0;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz-bg .take-quiz-white-bg {
     height: 18.75rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz-bg .take-quiz-white-bg {
     height: 13.75rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz-bg .take-quiz-white-bg {
     height: 9.375rem;
     width: 80%;
@@ -684,7 +684,7 @@ nav .navbar__login .login-btn:hover {
   display: flex;
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz .take-quiz-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -707,21 +707,21 @@ nav .navbar__login .login-btn:hover {
      object-fit: cover;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-image img {
     width: 25rem;
     height: 25rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-image img {
     width: 17.5rem;
     height: 17.5rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-image img {
     display: none;
   }
@@ -741,19 +741,19 @@ nav .navbar__login .login-btn:hover {
   padding-left: 5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text {
     padding-left: 3.125rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text {
     padding-left: 1.25rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text {
     text-align: center;
     padding-left: 1rem;
@@ -773,13 +773,13 @@ nav .navbar__login .login-btn:hover {
   color: var(--text-white);
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-head h2 {
     font-size: 1.75rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-head h2 {
     font-size: 1.375rem;
   }
@@ -792,13 +792,13 @@ nav .navbar__login .login-btn:hover {
   color: var(--text-black);
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-head h3 {
     font-size: 1.375rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-head h3 {
     font-size: 1.125rem;
   }
@@ -817,14 +817,14 @@ nav .navbar__login .login-btn:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-head .take-quiz-btn {
     padding: 0.75rem 2rem;
     margin-top: 2rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-head .take-quiz-btn {
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
@@ -832,7 +832,7 @@ nav .navbar__login .login-btn:hover {
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-head .take-quiz-btn {
     margin-top: 0.75rem;
   }
@@ -854,7 +854,7 @@ nav .navbar__login .login-btn:hover {
   margin-top: 3.75rem;
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-foot {
     margin-top: 1.875rem;
   }
@@ -869,13 +869,13 @@ nav .navbar__login .login-btn:hover {
   font-weight: 700;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-foot .quiz-overview .quiz-overview-count {
     font-size: 1.75rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-foot .quiz-overview .quiz-overview-count {
     font-size: 1.375rem;
   }
@@ -887,19 +887,19 @@ nav .navbar__login .login-btn:hover {
   margin-top: 0.75rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-foot .quiz-overview .quiz-overview-label {
     font-size: 1.125rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-foot .quiz-overview .quiz-overview-label {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .take-quiz-section .take-quiz .take-quiz-content .take-quiz-text .quiz-foot .quiz-overview .quiz-overview-label {
     margin-top: 0.5rem;
   }
@@ -932,13 +932,13 @@ nav .navbar__login .login-btn:hover {
   display: none;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .exam-section .exams-container .exams {
     padding: 0rem 2rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .exam-section .exams-container .exams {
     padding: 0rem 1rem;
   }
@@ -965,7 +965,7 @@ nav .navbar__login .login-btn:hover {
   margin: 0 2.5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .exam-section .exams-container .exams .exam {
     margin: 0 1rem;
   }
@@ -992,13 +992,13 @@ nav .navbar__login .login-btn:hover {
   font-size: 2rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .success-section .satisfied-bg .satisfied-heading {
     font-size: 1.75rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .success-section .satisfied-bg .satisfied-heading {
     font-size: 1.5rem;
     margin-top: 0.75rem;
@@ -1039,14 +1039,14 @@ nav .navbar__login .login-btn:hover {
   margin-right: 1rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .success-section .success-container .success-content .success-header {
     margin-left: 7.5rem;
     margin-right: 7.5rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .success-section .success-container .success-content .success-header {
     margin-left: 3.75rem;
     margin-right: 3.75rem;
@@ -1094,7 +1094,7 @@ nav .navbar__login .login-btn:hover {
   display: none;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .success-section .success-container .success-content .success-stories {
     margin-top: 2rem;
   }
@@ -1108,7 +1108,7 @@ nav .navbar__login .login-btn:hover {
   margin: 0 1rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .success-section .success-container .success-content .success-stories .success-story {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1135,13 +1135,13 @@ nav .navbar__login .login-btn:hover {
   text-overflow: ellipsis;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .success-section .success-container .success-content .success-stories .success-story .story {
     font-size: 0.875rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .success-section .success-container .success-content .success-stories .success-story .story {
     font-size: 0.75rem;
   }
@@ -1158,14 +1158,14 @@ nav .navbar__login .login-btn:hover {
   margin-left: 2.5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .success-section .success-container .success-content .success-stories .success-story .success-detail {
     margin-left: 0rem;
     margin-top: 1.75rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .success-section .success-container .success-content .success-stories .success-story .success-detail {
     font-size: 1rem;
     margin-top: 1.25rem;
@@ -1192,13 +1192,13 @@ nav .navbar__login .login-btn:hover {
   color: var(--text-white);
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .success-section .success-container .success-content .success-stories .success-story .success-detail .detail-text p {
     font-size: 1.125rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .success-section .success-container .success-content .success-stories .success-story .success-detail .detail-text p {
     font-size: 1rem;
   }
@@ -1213,14 +1213,14 @@ nav .navbar__login .login-btn:hover {
   margin-left: 2rem;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .success-section .success-container .success-content .success-stories .success-story .success-detail img {
     width: 4.375rem;
     height: 4.375rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .success-section .success-container .success-content .success-stories .success-story .success-detail img {
     width: 3.75rem;
     height: 3.75rem;
@@ -1256,7 +1256,7 @@ nav .navbar__login .login-btn:hover {
   display: none;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .news-update-section .news-container .news-cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1269,19 +1269,19 @@ nav .navbar__login .login-btn:hover {
   width: 18.75rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .news-update-section .news-container .news-cards .card {
     width: 15rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .news-update-section .news-container .news-cards .card {
     width: 11.25rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .news-update-section .news-container .news-cards .card {
     width: 16.5rem;
     margin: 0 5rem;
@@ -1295,21 +1295,21 @@ nav .navbar__login .login-btn:hover {
      object-fit: cover;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .news-update-section .news-container .news-cards .card img {
     width: 15rem;
     height: 12.5rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .news-update-section .news-container .news-cards .card img {
     width: 11.25rem;
     height: 9.375rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .news-update-section .news-container .news-cards .card img {
     width: 16.5rem;
     height: 13.75rem;
@@ -1320,19 +1320,19 @@ nav .navbar__login .login-btn:hover {
   width: 18.75rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .news-update-section .news-container .news-cards .card .card-text {
     width: 15rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .news-update-section .news-container .news-cards .card .card-text {
     width: 11.25rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .news-update-section .news-container .news-cards .card .card-text {
     width: 16.5rem;
   }
@@ -1344,19 +1344,19 @@ nav .navbar__login .login-btn:hover {
   font-weight: 700;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .news-update-section .news-container .news-cards .card .card-text h3 {
     font-size: 1.125rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .news-update-section .news-container .news-cards .card .card-text h3 {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .news-update-section .news-container .news-cards .card .card-text h3 {
     font-size: 1.125rem;
   }
@@ -1372,7 +1372,7 @@ nav .navbar__login .login-btn:hover {
   text-overflow: ellipsis;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .news-update-section .news-container .news-cards .card .card-text p {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1380,7 +1380,7 @@ nav .navbar__login .login-btn:hover {
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .news-update-section .news-container .news-cards .card .card-text p {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -1389,7 +1389,7 @@ nav .navbar__login .login-btn:hover {
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .news-update-section .news-container .news-cards .card .card-text p {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1427,7 +1427,7 @@ nav .navbar__login .login-btn:hover {
   margin: auto;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .number-section .number-enclosure {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1440,7 +1440,7 @@ nav .navbar__login .login-btn:hover {
   display: inline-block;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .number-section .number-enclosure .left {
     text-align: center;
   }
@@ -1468,7 +1468,7 @@ nav .navbar__login .login-btn:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .number-section .number-enclosure .left .start-learning-btn {
     margin: 1.25rem;
   }
@@ -1492,13 +1492,13 @@ nav .navbar__login .login-btn:hover {
           align-items: center;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .number-section .number-enclosure .right {
     width: 100%;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .number-section .number-enclosure .right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1513,7 +1513,7 @@ nav .navbar__login .login-btn:hover {
   text-align: center;
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .number-section .number-enclosure .right .right-text {
     margin-bottom: 1.5rem;
   }
@@ -1525,13 +1525,13 @@ nav .navbar__login .login-btn:hover {
   margin-bottom: 1.25rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .number-section .number-enclosure .right .right-text p {
     font-size: 1.125rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .number-section .number-enclosure .right .right-text p {
     font-size: 1.375rem;
   }
@@ -1542,13 +1542,13 @@ nav .navbar__login .login-btn:hover {
   font-weight: 600;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .number-section .number-enclosure .right .right-text h3 {
     font-size: 2.5rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .number-section .number-enclosure .right .right-text h3 {
     font-size: 3.375rem;
   }
@@ -1585,7 +1585,7 @@ nav .navbar__login .login-btn:hover {
   font-weight: 600;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .service-provided-section .service-provided .heading-image h2 {
     font-size: 1.25rem;
   }
@@ -1598,21 +1598,21 @@ nav .navbar__login .login-btn:hover {
      object-fit: cover;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .service-provided-section .service-provided .heading-image img {
     height: 18.75rem;
     width: 28.125rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .service-provided-section .service-provided .heading-image img {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .service-provided-section .service-provided .heading-image img {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
@@ -1624,21 +1624,21 @@ nav .navbar__login .login-btn:hover {
   z-index: -10;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .service-provided-section > img {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .service-provided-section > img {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .service-provided-section > img {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
@@ -1650,20 +1650,20 @@ nav .navbar__login .login-btn:hover {
   left: 7.5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .service-provided-section #services-video-lectures {
     left: 7.5rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .service-provided-section #services-video-lectures {
     top: 5rem;
     left: 1.875rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .service-provided-section #services-video-lectures {
     top: 7.5rem;
     left: -3.687rem;
@@ -1675,20 +1675,20 @@ nav .navbar__login .login-btn:hover {
   right: 7.5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .service-provided-section #services-latest-updates {
     right: 3.75rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .service-provided-section #services-latest-updates {
     top: 5rem;
     right: 1.875rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .service-provided-section #services-latest-updates {
     top: 7.5rem;
     right: -3.687rem;
@@ -1700,20 +1700,20 @@ nav .navbar__login .login-btn:hover {
   left: 6.25rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .service-provided-section #services-magazines {
     left: 3.75rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .service-provided-section #services-magazines {
     bottom: 5rem;
     left: 1.875rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .service-provided-section #services-magazines {
     bottom: 6.5rem;
     left: -6.687rem;
@@ -1725,20 +1725,20 @@ nav .navbar__login .login-btn:hover {
   right: 7.5rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .service-provided-section #services-test-series {
     right: 3.75rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .service-provided-section #services-test-series {
     bottom: 5rem;
     right: 1.875rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .service-provided-section #services-test-series {
     bottom: 5.5rem;
     right: -5.687rem;
@@ -1769,21 +1769,21 @@ nav .navbar__login .login-btn:hover {
           align-items: center;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .satisfied-section .satisfied-card-container {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-section .satisfied-card-container {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-section .satisfied-card-container {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1827,7 +1827,7 @@ nav .navbar__login .login-btn:hover {
   display: none;
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-section .satisfied-card-container .wrapper .satisfied-cards {
     width: 20rem;
   }
@@ -1848,19 +1848,19 @@ nav .navbar__login .login-btn:hover {
           flex-direction: column;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   .satisfied-section .satisfied-card-container .wrapper .satisfied-cards .satisfied-card {
     margin: auto 0.375rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-section .satisfied-card-container .wrapper .satisfied-cards .satisfied-card {
     margin: auto 0.5rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-section .satisfied-card-container .wrapper .satisfied-cards .satisfied-card {
     margin: auto 2rem;
   }
@@ -1951,14 +1951,14 @@ nav .navbar__login .login-btn:hover {
           transform: translate(-20%, -10%) rotate(135deg);
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-bg .line {
     -webkit-transform: scale(0.8) translate(-29%, -10%) rotate(135deg);
             transform: scale(0.8) translate(-29%, -10%) rotate(135deg);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-bg .line {
     -webkit-transform: scale(0.6) translate(-49%, -10%) rotate(135deg);
             transform: scale(0.6) translate(-49%, -10%) rotate(135deg);
@@ -1977,14 +1977,14 @@ nav .navbar__login .login-btn:hover {
           transform: translate(40%, -40%);
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-bg .circle {
     -webkit-transform: translate(40%, -40%) scale(0.8);
             transform: translate(40%, -40%) scale(0.8);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-bg .circle {
     -webkit-transform: translate(50%, -40%) scale(0.6);
             transform: translate(50%, -40%) scale(0.6);
@@ -2003,14 +2003,14 @@ nav .navbar__login .login-btn:hover {
           transform: translate(-40%, 40%);
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-bg .circle-bottom {
     -webkit-transform: translate(-40%, 40%) scale(0.8);
             transform: translate(-40%, 40%) scale(0.8);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-bg .circle-bottom {
     -webkit-transform: translate(-50%, 40%) scale(0.6);
             transform: translate(-50%, 40%) scale(0.6);
@@ -2028,14 +2028,14 @@ nav .navbar__login .login-btn:hover {
           transform: translate(20%, 0%) rotate(135deg);
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-bg .line-right {
     -webkit-transform: translate(23%, 0%) rotate(135deg) scale(0.8);
             transform: translate(23%, 0%) rotate(135deg) scale(0.8);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-bg .line-right {
     -webkit-transform: translate(30%, 0%) rotate(135deg) scale(0.6);
             transform: translate(30%, 0%) rotate(135deg) scale(0.6);
@@ -2049,14 +2049,14 @@ nav .navbar__login .login-btn:hover {
   height: 7.5rem;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-bg img {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-bg img {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
@@ -2072,13 +2072,13 @@ nav .navbar__login .login-btn:hover {
   color: var(--text-white);
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   .satisfied-bg .satisfied-heading {
     font-size: 1.375rem;
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   .satisfied-bg .satisfied-heading {
     font-size: 1.25rem;
   }
@@ -2118,7 +2118,7 @@ footer .footer-section .footer-wrapper .footer {
   margin: auto;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2134,13 +2134,13 @@ footer .footer-section .footer-wrapper .footer .foot {
   max-width: 15.625rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   footer .footer-section .footer-wrapper .footer .foot {
     margin: 0 0.5rem;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot:nth-child(1) {
     margin-top: 2rem;
   }
@@ -2152,7 +2152,7 @@ footer .footer-section .footer-wrapper .footer .foot h3 {
   font-weight: 700;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot h3 {
     text-align: center;
     margin-bottom: 1rem;
@@ -2166,7 +2166,7 @@ footer .footer-section .footer-wrapper .footer .foot .foot-text {
   font-weight: 400;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot .foot-text {
     text-align: center;
   }
@@ -2195,13 +2195,13 @@ footer .footer-section .footer-wrapper .footer .foot-side {
   max-width: 36.25rem;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   footer .footer-section .footer-wrapper .footer .foot-side {
     max-width: none;
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot-side {
     max-width: none;
     text-align: center;
@@ -2216,7 +2216,7 @@ footer .footer-section .footer-wrapper .footer .foot-side #news-letter-checkbox 
   display: inline-block;
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   footer .footer-section .footer-wrapper .footer .foot-side #news-letter-checkbox {
     height: 1rem;
     width: 1rem;
@@ -2228,7 +2228,7 @@ footer .footer-section .footer-wrapper .footer .foot-side label {
   font-weight: 700;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot-side label {
     text-align: center;
     font-size: 1rem;
@@ -2239,7 +2239,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper {
   margin-top: 1.25rem;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper {
     margin-top: 1.25rem;
   }
@@ -2251,7 +2251,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper h4 {
   margin-bottom: 1.25rem;
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper h4 {
     font-size: 0.875rem;
     margin-bottom: 0.75rem;
@@ -2268,7 +2268,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-
   border: none;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-input .input-email-id {
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
@@ -2276,7 +2276,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-input .input-email-id {
     padding: 0.625rem 0.875rem;
     width: 15.625rem;
@@ -2285,7 +2285,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-input .input-email-id {
     padding: 0.5rem 0.75rem;
     border-radius: 0.375rem;
@@ -2309,7 +2309,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-
   transition: opacity 0.3s ease-in-out;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-input .yes-please-button {
     padding: 0.75rem 1rem;
     border-radius: 0.375rem;
@@ -2320,7 +2320,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-input .yes-please-button {
     padding: 0.625rem 0.875rem;
     border-radius: 0.3125rem;
@@ -2331,7 +2331,7 @@ footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-
   }
 }
 
-@media (max-width: 40em) {
+@media screen and (max-width: 40em) {
   footer .footer-section .footer-wrapper .footer .foot-side .email-wrapper .email-input .yes-please-button {
     padding: 0.5rem 0.75rem;
     border-radius: 0.25rem;
@@ -2352,14 +2352,14 @@ footer .footer-section .footer-wrapper .footer .foot-side .footer-logo {
   display: flex;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 64em) {
   footer .footer-section .footer-wrapper .footer .foot-side .footer-logo {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
 }
 
-@media (max-width: 52em) {
+@media screen and (max-width: 52em) {
   footer .footer-section .footer-wrapper .footer .foot-side .footer-logo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
